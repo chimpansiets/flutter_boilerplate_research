@@ -1,0 +1,25 @@
+name: my_flutter_project
+
+packages:
+  - packages/**
+
+scripts:
+  bootstrap:
+    description: 'Install dependencies and link local packages together.'
+    run: 'melos bootstrap'
+
+  test:
+    description: 'Run the tests for all packages.'
+    run: 'melos exec -- flutter test'
+
+  lint:
+    description: 'Run the linter for all packages.'
+    run: 'melos exec -- flutter analyze'
+
+  publish:
+    description: 'Publish any unpublished packages.'
+    run: 'melos publish'
+
+  pubget:
+    description: 'Run flutter pub get on all packages.'
+    run: 'melos exec -- flutter pub get'
