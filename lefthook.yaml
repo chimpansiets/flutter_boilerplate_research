@@ -2,6 +2,4 @@ pre-commit:
   parallel: true
   commands:
     dart-analyze:
-      run: flutter analyze
-    unit-tests:
-      run: flutter test
+      run: melos lint
